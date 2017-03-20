@@ -1,0 +1,38 @@
+{
+  "name": "ng2-module-library",
+  "version": "0.0.1",
+  "description": "Sample Angular Module Library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -p src; gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jgainfort/ng2-module-library.git"
+  },
+  "keywords": [
+    "Angular",
+    "Module",
+    "Library"
+  ],
+  "author": "John G. Gainfort, Jr. <gainfortj@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jgainfort/ng2-module-library/issues"
+  },
+  "homepage": "https://github.com/jgainfort/ng2-module-library#readme",
+  "dependencies": {
+    "@angular/common": "^4.0.0-rc.2",
+    "@angular/compiler": "^4.0.0-rc.2",
+    "@angular/core": "^4.0.0-rc.2",
+    "rxjs": "^5.2.0",
+    "zone.js": "^0.8.4"
+  },
+  "devDependencies": {
+    "codelyzer": "^3.0.0-beta.4",
+    "gulp": "^3.9.1",
+    "tslint": "^4.5.1",
+    "typescript": "^2.2.1"
+  }
+}
