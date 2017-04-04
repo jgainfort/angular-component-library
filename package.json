@@ -22,7 +22,7 @@
     "Library"
   ],
   "author": "John G. Gainfort, Jr. <gainfortj@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/jgainfort/ng2-module-library/issues"
   },
