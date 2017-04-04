@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'sample-lib-component',
-  styleUrls: ['./library.component.scss'],
-  templateUrl: './library.component.html'
+  template: `<h1>{{title}}</h1>`
 })
 export class LibraryComponent implements OnInit {
 

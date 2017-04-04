@@ -2,7 +2,10 @@
 
 # compiled output
 /dist
+!/dist/package.json
 /tmp
+**/*.ngsummary.json
+**/*.ngfactory.ts
 
 # dependencies
 /node_modules
