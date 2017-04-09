@@ -1,11 +1,11 @@
-# ng2-module-library
+# angular-component-library
 
 ### Installing Dependencies ###
 To install dependencies
 
 * Run the command `npm install`
 
-### Working with ng2-module-library
+### Working with angular-component-library
 
 ## IDE Setup
 In the project root dir are two files:
@@ -21,4 +21,4 @@ Whatever IDE we are using, let's please install any plugins necessary to work wi
 ## Build
 Run `npm run build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Implementing ng2-module-library in your application
+## Implementing angular-component-library in your application
