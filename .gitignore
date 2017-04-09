@@ -2,6 +2,7 @@
 
 # compiled output
 /dist
+/build
 !/dist/package.json
 /tmp
 **/*.ngsummary.json
