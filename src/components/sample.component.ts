@@ -1,13 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'sample',
-  template: `
-    <h1>{{title}}</h1>
-  `,
-  styles: [`
-    h1 { color: red }
-  `]
+  selector: 'acl-sample',
+  templateUrl: './sample.component.html',
+  styleUrls: ['./sample.component.css']
 })
 export class SampleComponent {
   title = 'sample componenent works!';
