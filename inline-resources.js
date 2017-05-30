@@ -98,6 +98,9 @@ function inlineStyle(content, urlResolver) {
     const urls = eval(styleUrls);
     return 'styles: ['
       + urls.map(styleUrl => {
+        const preprocessor = styleUrl.match(/(.*)(\.scss|\.less|\.styl)/)
+        // depending on the preprocessor kick off require compile and use that new file for the inline
+        styleUrl = preprocessor && preprocessor.length > 0 ? `${preprocessor[1]}.css` : styleUrl
         const styleFile = urlResolver(styleUrl);
         const styleContent = fs.readFileSync(styleFile, 'utf-8');
         const shortenedStyle = styleContent
