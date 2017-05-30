@@ -71,21 +71,6 @@ return Promise.resolve()
       ]
     };
 
-    // UMD bundle.
-    const umdConfig = Object.assign({}, rollupBaseConfig, {
-      entry: es5Entry,
-      dest: path.join(distFolder, `bundles`, `${libName}.umd.js`),
-      format: 'umd',
-    });
-
-    // Minified UMD bundle.
-    const minifiedUmdConfig = Object.assign({}, rollupBaseConfig, {
-      entry: es5Entry,
-      dest: path.join(distFolder, `bundles`, `${libName}.umd.min.js`),
-      format: 'umd',
-      plugins: rollupBaseConfig.plugins.concat([uglify({})])
-    });
-
     // ESM+ES5 flat module bundle.
     const fesm5config = Object.assign({}, rollupBaseConfig, {
       entry: es5Entry,
@@ -101,8 +86,6 @@ return Promise.resolve()
     });
 
     const allBundles = [
-      umdConfig,
-      minifiedUmdConfig,
       fesm5config,
       fesm2015config
     ].map(cfg => rollup.rollup(cfg).then(bundle => bundle.write(cfg)));
