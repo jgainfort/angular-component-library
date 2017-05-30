@@ -7,9 +7,12 @@
     "stripInternal": true,
     "experimentalDecorators": true,
     "moduleResolution": "node",
-    "outDir": "../build",
+    "outDir": "../../out-tsc/lib-es5",
     "rootDir": ".",
-    "lib": ["es2015", "dom"],
+    "lib": [
+      "es2015",
+      "dom"
+    ],
     "skipLibCheck": true,
     "types": []
   },
@@ -21,6 +24,7 @@
     "strictMetadataEmit": true,
     "skipTemplateCodegen": true,
     "flatModuleOutFile": "angular-component-library.js",
-    "flatModuleId": "angular-component-library"
+    "flatModuleId": "angular-component-library",
+    "genDir": "../../out-tsc/lib-gen-dir/"
   }
 }
